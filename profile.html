@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Online Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="loadUserProfile()">
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div id="userInfo"></div>
+        
+        <h2><i class="fas fa-award"></i> Your Badges</h2>
+        <div id="userBadges" class="badge-container"></div>
+        
+        <h2><i class="fas fa-certificate"></i> Your Certificates</h2>
+        <div id="userCertificates" class="certificate-container"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Courses. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

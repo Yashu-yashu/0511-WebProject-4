@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now - Online Courses</title>
+    <link rel="stylesheet" href="enrollstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        nav{
+    background-color:rgb(9, 255, 214);
+    padding-top:50px;
+    padding-right:50px;
+    padding-bottom:50px;
+    padding-left:80px;
+}
+a{
+    text-decoration-line:none;
+}
+    </style>
+</head>
+<body>
+    <center><nav style="font-size:50px;">
+        <a href="index.html">Home</a>&nbsp;
+        <a href="courses.html">Courses</a>&nbsp;
+        <a href="about.html">About</a>&nbsp;
+        <a href="contact.html">Contact</a>&nbsp;
+        <a href="login.html">Login</a>&nbsp;
+    </nav></center>
+    <header>
+       <center><h1 style="font-size:50px;">Enroll Now</h1></center> 
+    </header>
+    <div class="container">
+        <div class="enrollment-process">
+            <h2><i class="fas fa-user-graduate"></i> Enrollment Process</h2>
+            <ol>
+                <li>Fill out the enrollment form</li>
+                <li>Review your course selection</li>
+                <li>Complete the payment</li>
+                <li>Receive confirmation email</li>
+                <li>Start your learning journey!</li>
+            </ol>
+        </div>
+
+        <div class="enrollment-form">
+            <h2><i class="fas fa-pencil-alt"></i> Enrollment Form</h2>
+            <form action="login.html">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option value="html">Introduction to HTML</option>
+                    <option value="css">CSS Fundamentals</option>
+                    <option value="javascript">JavaScript Basics</option>
+                </select>
+                
+                <label for="startDate">Preferred Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                
+                <label for="experience">Prior Experience:</label>
+                <textarea id="experience" name="experience" placeholder="Briefly describe your prior experience in this subject (if any)"></textarea>
+                
+                <label for="agreeTerms">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    I agree to the terms and conditions
+                </label>
+                
+                <button type="submit" class="btn">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="enrollmentConfirmation" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enrollment Confirmation</h2>
+            <div id="confirmationDetails"></div>
+            <p>Thank you for enrolling! Please check your email for further instructions.</p>
+            <button onclick="closeConfirmation()" class="btn">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Courses. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

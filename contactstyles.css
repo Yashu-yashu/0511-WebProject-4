@@ -1,0 +1,83 @@
+/* Add these styles to the existing styles.css file */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #2980b9;
+}
+
+.map-container {
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+body{
+    background-image:url("conta.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}

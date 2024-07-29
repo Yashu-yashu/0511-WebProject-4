@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS fundamentals- Course Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="course-header">
+            <h2>CSS Course Details</h2>
+            <img src="css.jpg" alt="HTML Course" class="course-image">
+            <div class="course-info">
+                <p>Master the art of styling web pages with CSS.</p>
+                <p><strong>Duration:</strong> 4 weeks</p>
+                <p><strong>Difficulty:</strong> Beginner</p>
+                <p><strong>Prerequisites:</strong> None</p>
+                
+                <div id="IntroductiontoHTMLRating">Rating: 4.5/5 (10 votes)</div>
+                <div class="rating-buttons">
+                    Rate this course:
+                    <button onclick="rateCourse('Introduction to HTML', 1)">1</button>
+                    <button onclick="rateCourse('Introduction to HTML', 2)">2</button>
+                    <button onclick="rateCourse('Introduction to HTML', 3)">3</button>
+                    <button onclick="rateCourse('Introduction to HTML', 4)">4</button>
+                    <button onclick="rateCourse('Introduction to HTML', 5)">5</button>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Course Outline</h3>
+        <ul>
+            <li>Week 1: CSS Basics and Styles</li>
+            <li>Week 2: Working with RGB</li>
+            <li>Week 3: Creating background colour</li>
+            <li>Week 4: CSS Importing and Best Practices</li>
+        </ul>
+        
+        <div class="instructor">
+            <div class="instructor-info">
+                <h3>Course Instructor:John Smith</h3>
+                <p>Jane is a web development expert with over 10 years of experience in teaching HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+        <h3><i class="fas fa-award"></i> Available Badges</h3>
+<div class="badge-container">
+    <div class="badge">
+        <img src="CSSbadge.jpg" alt="CSS Master Badge">
+        <p>CSS Master</p>
+    </div>
+</div>
+<!-- Add this section just after the course outline -->
+<h3><i class="fas fa-certificate"></i> Course Certificate</h3>
+<div class="certificate-preview">
+    <img src="csscerti.jpg" alt="HTML Course Certificate" height="400" width="500">
+    <p>Sample certificate awarded upon course completion</p>
+</div>
+    </div>
+</body>
+</html>
